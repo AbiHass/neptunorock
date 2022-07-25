@@ -1,34 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>LandingPage</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <nav>
+    <header class="header">
         <img class="logo" src="logo6.png" alt="logo">
-        <div class="opciones">
-            <span>
-                <button class="button">Albums</button>
-                <button class="button">Videos</button>
-                <button class="button">Gira</button>
-                <button class="button">Store</button>
-                <button class="button">Novedades</button>
-            </span>
-        </div>
-    </nav>
-    <main class="main">
-    <section>
-      
-            <p class="section1">La música que tus oídos necesitan</p>
-  
+        <nav class="navbar">
+            <input type="checkbox" id="toggle-menu">
+            <label for="toggle-menu">
+                <i class="fas fa-bars"></i>
+            </label>
+            
+            <ul>
+                <li><a class="navbar-link" href="#">Albums</a></li>
+                <li><a class="navbar-link" href="#">Videos</a></li>
+                <li><a class="navbar-link" href="#">Gira</a></li>
+                <li><a class="navbar-link" href="#">Store</a></li>
+                <li><a class="navbar-link" href="#">Novedades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-presentation">
+                <h1>Neptuno</h1>
+                <p>La música <span>que tus oídos</span><span>necesitan</span></p>
+            </div>
+            <img class="hero-img" src="banda.webp" alt="imagen banda">
+        </section>
+        <section id="about">
+            <div class="section2">
+                <p>Somos una banda indie rock con origen en Rosario, fundada en el año 2015. Experimentamos
+                    entre el punk rock, el noise rock y el noise pop, y que salga lo que salga!</p>
+            </div>
+            <div class="boton2">
+                <a href="https://www.youtube.com/" class="boton_2">Escuchanos &#x1f3a7</a>
+            </div>
+        </section>
+    </main>
+    <section class="section_cards">
+        <article>
+            <img src="https://dbdzm869oupei.cloudfront.net/img/sticker/preview/53190.png" alt="img disco nuevo"
+                class="info-card">
+            <div class="card">
+                <h1>Nuevo album!</h1>
+                <p>Disponible a partir de septiembre <span>en todas las plataformas.</span></p>
+                <p>Escuchá un adelanto</p>
+                <a href="https://www.youtube.com/" class="button-cards">Acá</a>
+            </div>
+        </article>
+        <article>
+            <img src="https://images.vexels.com/media/users/3/160982/isolated/preview/1b0eb174bde37b2d0b622aa0ced410dd-planeta-tierra-globo-europa-africa-plana.png"
+                alt="img mundo" class="info-card">
+            <div class="card">
+                <h1>¡Gira 2022!</h1>
+                <a href="#" class="button-cards">Fechas</a>
+            </div>
+        </article>
+        <article>
+            <a href="https://www.youtube.com/"><img src="youtube.png" alt="youtube" class="info-card"></a>
+            <div class="card">
+                <h1>Mirá el nuevo video!</h1>
+            </div>
+        </article>
     </section>
-    <section>
-        <div class="section2">
-            <p>Desde Rosario al Cosmos</p>
-            <button class="boton2"> Escuchanos &#x1f3a7</button>
+    <footer>
+        <div class="contacto">
+            <h1>Buscanos</h1>
+            <a href="https://www.instagram.com/"><img src="instagram.png" alt="instagram" class="icon"></a>
+            <a href="https://www.facebook.com/"><img src="fb.png" alt="facebook" class="icon"></a>
+            <a href="https://www.spotify.com/"><img src="spotify.png" alt="spotify" class="icon"></a>
+            <a href="https://www.youtube.com/"><img src="youtube.png" alt="youtube" class="icon"></a>
         </div>
-    </section>
-</main>
+        <div class="legales">
+            <p>© Neptuno 2022. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
+
 </html>
